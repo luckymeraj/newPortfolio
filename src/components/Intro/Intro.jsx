@@ -2,9 +2,11 @@ import React, { useContext } from "react";
 import "./Intro.css";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.png";
+import boy4 from "../../img/boy4.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
+import reactImg from "../../img/reactImg.png";
+
 import crown from "../../img/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
@@ -28,7 +30,7 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
+          <span>Meraj Rizwan</span>
           <span>
             Frontend Developer with high level of experience in web designing
             and development, producting the Quality work
@@ -48,7 +50,7 @@ const Intro = () => {
       <div className="i-right">
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
+        <img src={boy4} alt="" />
         {/* animation */}
         <motion.img
           initial={{ left: "-36%" }}
@@ -64,7 +66,7 @@ const Intro = () => {
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatinDiv img={crown} text1="React" text2="Developer" />
         </motion.div>
 
         {/* animation */}
@@ -75,7 +77,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumbup} text1="Frontend" text2="Developer" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
